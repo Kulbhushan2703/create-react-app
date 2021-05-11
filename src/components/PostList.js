@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import '../App.css'
+import '../postlist.css'
 
 class PostList extends Component {
     constructor(props) {
@@ -28,12 +28,12 @@ class PostList extends Component {
         const { posts, errorMsg } = this.state
         return (
             <div className='topbarLeft'>
-                    <img src= "/assets/logo.png" alt="" className=
+                    <img src= "/assets/logo.png" alt="" id=
                 'topbarImg'/>
-               List of Posts 
+              <h1 className='list1'>List of Posts</h1> 
                {
                    posts.length ?
-                   posts.map(post => <div id='Logo'
+                   posts.map(post => <div className='Logo2'
                     key=
                     {post.id}>{post.title}</div>) :
                     null

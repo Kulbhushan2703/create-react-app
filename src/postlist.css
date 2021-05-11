@@ -1,0 +1,33 @@
+.topbarLeft {
+    flex: 3;
+    text-align: left;
+    position: relative;
+    background-color: rgb(36, 36, 70);
+    float: left;
+    top: -21px;
+  }
+
+  #topbarImg {
+    width: 80px;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .Logo2
+{
+  color: rgb(220, 228, 228);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.list1
+{
+  text-align: center;
+  color:rgb(204, 176, 134);
+}
+
+#topbarImg:hover {
+  transform:scale(1.2,1.2);
+}

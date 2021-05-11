@@ -1,0 +1,57 @@
+#Logo {
+  font-size: 32px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: hsla(60, 69%, 90%, 0.925);
+}
+
+#topbarCenter {
+  flex: 5;
+  text-align: center;
+  position: relative;
+  background-color: rgb(69, 85, 94);
+  float: center;
+  top: -21px;
+  left: 0;
+}
+
+#button1 {
+  background-color: rgb(39, 124, 39);
+  border: none;
+  color: whitesmoke;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family:monospace;
+  font-weight: bold;
+}
+
+#button2 {
+  background-color: rgb(177, 49, 17);
+  border: none;
+  color: whitesmoke;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+#para1
+{
+  color: hsla(60, 69%, 90%, 0.925);
+  font-family:sans-serif;
+  font-weight: bold;
+}
+
+#button1:hover {
+  background-color: rgb(92, 185, 92);
+}
+
+#button2:hover {
+  background-color: rgb(233, 43, 43);
+}
