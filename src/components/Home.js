@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import '../App.css'
+import '../home.css'
 
 class Home extends Component {
     constructor(props) {
@@ -14,7 +14,6 @@ class Home extends Component {
     updateData() {
         const data = {
             'userID': '2234',
-            'id': '2223',
             'title': 'Okay dexter New',
             'body': 'quia et suscipit recusandaet'
         }
@@ -31,7 +30,6 @@ class Home extends Component {
     delData() {
             const data = {
                 'userID': '2234',
-                'id': '2223',
                 'title': 'Okay dexter New',
                 'body': 'quia et suscipit recusandaet'
             }
@@ -46,11 +44,11 @@ class Home extends Component {
     }
     render() {
         return (
-    <div className='topbarCenter'>
-        <h1>Home Page</h1>
-        <p>Welcome</p>
-        <button onClick={this.updateData}>Update</button>
-        <button onClick={this.delData}>Delete</button>
+    <div id='topbarCenter'>
+        <h1 id='Logo'>PostBook</h1>
+        <p id='para1'>Namastey!</p>
+        <button id='button1' onClick={this.updateData}>Update</button>
+        <button id='button2' onClick={this.delData}>Delete</button>
     </div>
         )
     }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import '../App.css'
+import '../postform.css'
 
     class PostForm extends Component {
         constructor(props) {
@@ -8,8 +8,9 @@ import '../App.css'
         
             this.state = {
                  userId: '',
+                 id: '',
                  title: '',
-                 body: ''
+                 body: '',
             }
         }
     
@@ -31,23 +32,36 @@ import '../App.css'
         }
     
         render() {
-            const { userId, title, body } = this.state
+            const { userId, id, title, body } = this.state
             return (
-                <div className='topbarRight'>
+                <div id='topbarRight'>
                 <form onSubmit={this.submitHandler}>
                 <div>
-                <input type='text' name='userId' value={userId}
+                <input type='text' name='userId' 
+                placeholder='UserId'
+                value={userId}
                 onChange={this.changeHandler} />
                 </div>
                 <div>
-                <input type='text' name='title' value={title}
+                <input type='text' name='id' 
+                placeholder='Id'
+                value={id}
                 onChange={this.changeHandler} />
                 </div>
                 <div>
-                <input type='text' name='body' value={body}
+                <input type='text' name='title' 
+                placeholder='Title'
+                value={title}
                 onChange={this.changeHandler} />
                 </div>
-                <button type='submit'>Submit</button>
+                <div>
+                <input type='text' name='body' 
+                placeholder='Body'
+                value={body}
+                onChange={this.changeHandler} />
+                </div>
+                <button type='submit' className='submit'>
+                    Submit</button>
                 </form>
                 </div>
             )
